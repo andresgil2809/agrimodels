@@ -24,7 +24,7 @@
                     
                         
                     
-                    a
+                    
                     <a class="btn btn-dark align-self-center " href="">Produccion</a>
                     <a class="btn btn-dark align-self-center " href="{{ url('/animal/'.$animal->id.'/editar') }}">Editar</a>
                     <a class="btn btn-dark align-self-center " href="{{ route('animal.index') }}">Animales</a>
