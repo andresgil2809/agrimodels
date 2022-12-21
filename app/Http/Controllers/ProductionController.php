@@ -17,7 +17,7 @@ class ProductionController extends Controller
      */
     public function index()
     {
-        $validation="SELECT a.nombre AS nombre_animal , p.id as codigo, p.diaproducido as fecha , p.cantidad as dia_producido FROM animals as a INNER JOIN productions AS p ON a.id = p.animal_id ";
+        $validation="SELECT a.nombre AS nombre_animal , p.id as codigo, p.diaproducido as fecha , p.cantidad as dia_producido FROM animals as a INNER JOIN productions AS p ON a.id = p.animal_id where a.user_id =".auth()->user()->id;
 
         $productions= DB::select($validation);
 

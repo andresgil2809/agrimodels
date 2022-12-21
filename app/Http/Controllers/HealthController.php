@@ -16,7 +16,7 @@ class HealthController extends Controller
      */
     public function index()
     {
-        $validation="SELECT a.nombre as nombre_animal ,a.id as codigo, h.fecha as fechavacuna , h.nombrevacuna AS vacuna, h.finalidad as finalidad , h.diasretiro as dias_retiro FROM animals as a INNER JOIN healths as h ON a.id = h.animal_id";
+        $validation="SELECT a.nombre as nombre_animal ,a.id as codigo, h.fecha as fechavacuna , h.nombrevacuna AS vacuna, h.finalidad as finalidad , h.diasretiro as dias_retiro FROM animals as a INNER JOIN healths as h ON a.id = h.animal_id where a.user_id =".auth()->user()->id;
 
         $healths= DB::select($validation);
 

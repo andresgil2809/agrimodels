@@ -16,7 +16,7 @@ class FoodsController extends Controller
      */
     public function index()
     {
-        $validation="SELECT f.id as codigo , a.nombre as nombre_animal , f.fecha as fecha_comi , f.cantidadkg as cantidad_comi FROM foods as f INNER JOIN animals as a ON f.animal_id = a.id";
+        $validation="SELECT f.id as codigo , a.nombre as nombre_animal , f.fecha as fecha_comi , f.cantidadkg as cantidad_comi FROM foods as f INNER JOIN animals as a ON f.animal_id = a.id where a.user_id =".auth()->user()->id;
 
         $foods= DB::select($validation);
 
