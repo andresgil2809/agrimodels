@@ -8,9 +8,9 @@
         <div class="w-6x1 mx-auto hx-auto sm:px-6">
             
             <div class="bg-gray-100 overflow-hidden shadow-xl sm:rounded-lg   p-6 h-4x1" >
-                <h1 class="h3  uppercase text-black text-center">Terrenos</h1>
+                <h1 class="h3  uppercase text-black text-center">Terrenos <br><a class="btn btn-dark ml-15" href="{{ route('terrenos.create') }}">Crear terreno</a></h1>
                 <div class="container">
-                    <a class="btn btn-dark ml-15" href="{{ route('terrenos.create') }}">Crear terreno</a><br><br>
+                    
 
                     <table class="table table-light border rounded ">
                         <thead class="thead-light rounded">

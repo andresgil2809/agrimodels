@@ -26,7 +26,9 @@
                     <ul class="space-y-1">
                         <li><a href="{{ route('animal.create') }}" class="bg-gray-800 hover:bg-gray-400 text-white border border-solid-black hover:bg-gray-700 font-bold py-2 px-4 rounded inline-flex hover:bg-gray-400 transition items-center">Agregar un nuevo animal</a></li>
                         <li><a href="{{ route('animal.index') }}" class="bg-gray-800 hover:bg-gray-400 text-white border border-solid-black hover:bg-gray-700 font-bold py-2 px-4 rounded inline-flex hover:bg-gray-400 transition items-center">Listado de animales</a></li>
-                        <li><a href="" class="bg-gray-800 hover:bg-gray-400 text-white border border-solid-black hover:bg-gray-700 font-bold py-2 px-4 rounded inline-flex hover:bg-gray-400 transition items-center900 focus:outline-none focus:border-gray-900 focus:ring focus:ring-gray-300 disabled:opacity-25 transition">Eliminar animal</a></li>
+                        <li><a class="bg-gray-800 hover:bg-gray-400 text-white border border-solid-black hover:bg-gray-700 font-bold py-2 px-4 rounded inline-flex hover:bg-gray-400 transition items-center " href="{{ route('production.index') }}">Produccion</a></li>
+                        <li><a class="bg-gray-800 hover:bg-gray-400 text-white border border-solid-black hover:bg-gray-700 font-bold py-2 px-4 rounded inline-flex hover:bg-gray-400 transition items-center " href="{{ route('healths.index') }}">Sanidad</a></li>
+                        <li><a class="bg-gray-800 hover:bg-gray-400 text-white border border-solid-black hover:bg-gray-700 font-bold py-2 px-4 rounded inline-flex hover:bg-gray-400 transition items-center " href="{{ route('foods.index') }}">Comida</a></li>
                     </ul>
                     
                 </div>

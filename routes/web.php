@@ -3,9 +3,13 @@
 use App\Http\Controllers\AnimalController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ComidaController;
+use App\Http\Controllers\FoodsController;
+use App\Http\Controllers\HealthController;
 use App\Http\Controllers\TerrenoController;
 use App\Http\Controllers\PlantaController;
+use App\Http\Controllers\ProductionController;
 use App\Models\Animal;
+use App\Models\Foods;
 use App\Models\Planta;
 use Illuminate\Routing\Route as RoutingRoute;
 
@@ -59,9 +63,20 @@ Route::controller(TerrenoController::class)->middleware(['auth:sanctum',config('
 });
 
 Route::controller(AnimalController::class)->middleware(['auth:sanctum',config('jetstream.auth_session'),'verified'])->group(function () {
-
     Route::resource('animal', AnimalController::class);
-    
+});
+
+
+Route::controller(ProductionController::class)->middleware(['auth:sanctum',config('jetstream.auth_session'),'verified'])->group(function () {
+    Route::resource('production', ProductionController::class);
+});
+
+Route::controller(HealthController::class)->middleware(['auth:sanctum',config('jetstream.auth_session'),'verified'])->group(function () {
+    Route::resource('healths', HealthController::class);
+});
+
+Route::controller(FoodsController::class)->middleware(['auth:sanctum',config('jetstream.auth_session'),'verified'])->group(function () {
+    Route::resource('foods', FoodsController::class);
 });
 
 

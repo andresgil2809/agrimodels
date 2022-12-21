@@ -20,6 +20,7 @@ return new class extends Migration
             $table->foreign('animal_id')->references('id')->on('animals');
 
             $table->date('diaproducido');
+            $table->integer('cantidad');
             $table->timestamps();
         });
     }

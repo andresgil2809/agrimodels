@@ -15,12 +15,32 @@
                 <!-- Navigation Links -->
                 <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
                     <x-jet-nav-link href="{{ route('dashboard') }}" :active="request()->routeIs('dashboard')">
-                        {{ __('Agrimodels') }}
+                       <h2 class="h5">{{ __('Agrimodels') }}</h2> 
                     </x-jet-nav-link>
 
-                    {{-- <x-jet-nav-link :active="request()->routeIs('blog')">
-                        Blog
-                    </x-jet-nav-link> --}}
+                    <x-jet-nav-link href="{{ route('plantas.index') }}" :active="request()->routeIs('plantas')">
+                        Plantas
+                    </x-jet-nav-link>
+
+                    <x-jet-nav-link href="{{ route('terrenos.index') }}" :active="request()->routeIs('terrenos')">
+                        Terrenos
+                    </x-jet-nav-link>
+
+                    <x-jet-nav-link href="{{ route('animal.index') }}" :active="request()->routeIs('plantas')">
+                        Animales
+                    </x-jet-nav-link>
+
+                    <x-jet-nav-link href="{{ route('production.index') }}" :active="request()->routeIs('plantas')">
+                        Producción
+                    </x-jet-nav-link>
+
+                    <x-jet-nav-link href="{{ route('healths.index') }}" :active="request()->routeIs('sanidad')">
+                        Sanidad
+                    </x-jet-nav-link>
+                    
+                    <x-jet-nav-link href="{{ route('foods.index') }}" :active="request()->routeIs('comida')">
+                        Comida
+                    </x-jet-nav-link>
                 </div>
             </div>
 

@@ -54,17 +54,17 @@
             
 
             <div class="mt-3">
-                <label class="form-label h5" for="condicion">Condicion</label>
+                <label class="form-label h5" for="condicion">Condicion (1-100)</label>
                 <input class="form-control rounded" required type="number" name="condicion" value="{{ isset($animal->condicion) ? $animal->condicion:'' }}"  >
             </div>
 
             <div class="mt-3">
-                <label class="form-label h5" for="altitud">Altitud</label>
+                <label class="form-label h5" for="altitud">Altitud (Mtsnm)</label>
                 <input class="form-control rounded" required type="number" name="altitud" value="{{ isset($animal->altitud) ? $animal->altitud:'' }}"  >
             </div>
 
             <div class="mt-3">
-                <label class="form-label h5" for="peso">Peso</label>
+                <label class="form-label h5" for="peso">Peso(KG)</label>
                 <input class="form-control rounded" required type="number" name="peso" value="{{ isset($animal->peso) ? $animal->peso:'' }}"  >
             </div>
 

@@ -60,10 +60,14 @@ class AnimalController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function show($id)
-    {
-        $genero=Genero::all();
+    { 
+        /* $consulta="SELECT a.id  , a.user_id , a.nombre  ,  a.raza , a.condicion ,a.altitud, a.peso, a.climadeprocedencia, g.descripcion , a.fechadenacimiento , a.fechadeprimerparto
+        FROM animals as a INNER JOIN genero as g ON a.genero = g.id WHERE a.id =$id;"; */
+        
+
+
         $animal=Animal::findOrFail($id);
-        return view('animal.show', compact('animal','genero')); 
+        return view('animal.show', compact('animal')); 
     }
 
     /**
