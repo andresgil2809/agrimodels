@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title><h1 class=" h1">Bienvenido a agrimodels</h1></title>
+        <title>Bienvenido a agrimodels</title>
 
         <!-- Fonts -->
         <link href="https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
@@ -25,7 +25,7 @@
             @if (Route::has('login'))
                 <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
                     @auth
-                        <a href="{{ url('/dashboard') }}" class="text-sm text-white  underline">Bienvenido</a>
+                        <a href="{{ url('/dashboard') }}" class="text-sm      underline" style="color: white">Bienvenido</a>
                     @else
                         <a href="{{ route('login') }}" class="text-m text-white dark:text-white underline">Iniciar sesión</a>
 

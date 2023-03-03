@@ -15,7 +15,7 @@
                                Su planta sembrada es: {{$pa->nombre}} 
                         @endforeach
                         </h2> --}}
-                    <h2 class="h4 text-center" name="codplanta">Su planta sembrada es: {{ $nomPlanta }}</h2>     
+                    <h2 class="h4 text-center" name="codplanta">Su planta sembrada es: {{ $terrenos->nombre }}</h2>     
                 </div>
                 
                 <div class="texto align-self-center col-7 ">

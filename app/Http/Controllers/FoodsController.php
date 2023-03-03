@@ -21,7 +21,7 @@ class FoodsController extends Controller
         $foods= DB::select($validation);
 
         return view('foods.index' , compact('foods'));
-    }
+    }   
 
     /**
      * Show the form for creating a new resource.
@@ -30,7 +30,9 @@ class FoodsController extends Controller
      */
     public function create()
     {
-        $animals=Animal::all();
+        $validation="SELECT * FROM animals WHERE user_id=".auth()->user()->id;
+
+        $animals= DB::select($validation);
         
         return view('foods.create', compact('animals'));
     }
@@ -67,7 +69,9 @@ class FoodsController extends Controller
      */
     public function edit($id)
     {
-        $animals=Animal::all();
+        $validation="SELECT * FROM animals WHERE user_id=".auth()->user()->id;
+
+        $animals= DB::select($validation);
 
         $food=Foods::findOrFail($id);
         return view('foods.edit', compact('food' , 'animals'));

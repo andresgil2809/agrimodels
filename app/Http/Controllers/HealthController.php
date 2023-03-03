@@ -67,7 +67,12 @@ class HealthController extends Controller
      */
     public function edit($id)
     {
-        $animals=Animal::all();
+
+        $validation="SELECT * FROM animals WHERE user_id=".auth()->user()->id;
+
+        $animals= DB::select($validation);
+
+        
 
         $health=Health::findOrFail($id);
         return view('healths.edit', compact('health' , 'animals'));

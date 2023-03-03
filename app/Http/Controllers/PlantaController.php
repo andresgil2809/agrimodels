@@ -93,7 +93,6 @@ class PlantaController extends Controller
         Planta::where('id','=',$id)->update($plantas);
 
         
-          
         $plantas=Planta::findOrFail($id);
 
         return view('plantas.show', compact('plantas'))->with('mensaje','Planta editada con exito');

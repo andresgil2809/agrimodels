@@ -69,7 +69,9 @@ class ProductionController extends Controller
     public function edit($id)
     {
 
-        $animals=Animal::all();
+        $validation="SELECT * FROM animals WHERE user_id=".auth()->user()->id;
+
+        $animals= DB::select($validation);
 
         $production=Production::findOrFail($id);
         return view('production.edit', compact('production' , 'animals'));
