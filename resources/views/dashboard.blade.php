@@ -11,24 +11,23 @@
                 
                 <div class="terreno flex-1 text-center ">
                     <h2 class="h2 font-extrabold  uppercase text-black " >Gestion de cultivos</h2>
-                    <ul class="space-y-1">
-                        <li><a href="{{ route('plantas.create') }}" class="bg-gray-800 hover:bg-gray-400 text-white border border-solid-black hover:bg-gray-700 font-bold py-2 px-4 rounded inline-flex hover:bg-gray-400 transition items-center">Registrar una planta  </a></li>
-                        <li><a href="{{ route('plantas.index') }}" class="bg-gray-800 hover:bg-gray-400 text-white border border-solid-black hover:bg-gray-700 font-bold py-2 px-4 rounded inline-flex hover:bg-gray-400 transition items-center">Listado de plantas</a></li>
-                        <li><a href="{{ route('terrenos.create') }}" class="bg-gray-800 hover:bg-gray-400 text-white border border-solid-black hover:bg-gray-700 font-bold py-2 px-4 rounded inline-flex hover:bg-gray-400 transition items-center">Crear un nuevo terreno</a></li>
-                        <li><a href="{{ route('terrenos.index') }}" class="bg-gray-800 hover:bg-gray-400 text-white border border-solid-black hover:bg-gray-700 font-bold py-2 px-4 rounded inline-flex hover:bg-gray-400 transition items-center">Consultar un terreno</a></li>
-                        {{-- <li><a href="" class="bg-gray-800 hover:bg-gray-400 text-white border border-solid-black hover:bg-gray-700 font-bold py-2 px-4 rounded inline-flex hover:bg-gray-400 transition items-center">Eliminar un terreno</a></li> --}}
-                        {{-- <li><a href="" class="items-center px-3 py-1 bg-gray-800 border border-transparent rounded-md font-semibold text-xs text-white uppercase tracking-widest hover:bg-gray-700 active:bg-gray-900 focus:outline-none focus:border-gray-900 focus:ring focus:ring-gray-300 disabled:opacity-25 transition">Eliminar terreno</a></li> --}}
+
+                    <ul class="space-y-1 text-center">
+                        <li><a href="{{ route('plantas.create') }}" class="w-50  bg-gray-800 hover:bg-gray-400 text-white border border-solid-black hover:bg-gray-700 font-bold py-2 px-4 rounded inline-flex hover:bg-gray-400 transition items-center">Registrar una planta  </a></li>
+                        <li><a href="{{ route('plantas.index') }}" class="w-50 bg-gray-800 hover:bg-gray-400 text-white border border-solid-black hover:bg-gray-700 font-bold py-2 px-4 rounded inline-flex hover:bg-gray-400 transition items-center">Listado de plantas</a></li>
+                        <li><a href="{{ route('terrenos.create') }}" class="w-50 bg-gray-800 hover:bg-gray-400 text-white border border-solid-black hover:bg-gray-700 font-bold py-2 px-4 rounded inline-flex hover:bg-gray-400 transition items-center">Crear un nuevo terreno</a></li>
+                        <li><a href="{{ route('terrenos.index') }}" class="w-50 bg-gray-800 hover:bg-gray-400 text-white border border-solid-black hover:bg-gray-700 font-bold py-2 px-4 rounded inline-flex hover:bg-gray-400 transition items-center">Consultar un terreno</a></li>
                     </ul>
                     
                 </div>
                 <div class="ganado flex-1 text-center">
                     <h2 class=" h2 font-extrabold uppercase  text-black " >Gestion de ganado</h2>
                     <ul class="space-y-1">
-                        <li><a href="{{ route('animal.create') }}" class="bg-gray-800 hover:bg-gray-400 text-white border border-solid-black hover:bg-gray-700 font-bold py-2 px-4 rounded inline-flex hover:bg-gray-400 transition items-center">Agregar un nuevo animal</a></li>
-                        <li><a href="{{ route('animal.index') }}" class="bg-gray-800 hover:bg-gray-400 text-white border border-solid-black hover:bg-gray-700 font-bold py-2 px-4 rounded inline-flex hover:bg-gray-400 transition items-center">Listado de animales</a></li>
-                        <li><a class="bg-gray-800 hover:bg-gray-400 text-white border border-solid-black hover:bg-gray-700 font-bold py-2 px-4 rounded inline-flex hover:bg-gray-400 transition items-center " href="{{ route('production.index') }}">Produccion</a></li>
-                        <li><a class="bg-gray-800 hover:bg-gray-400 text-white border border-solid-black hover:bg-gray-700 font-bold py-2 px-4 rounded inline-flex hover:bg-gray-400 transition items-center " href="{{ route('healths.index') }}">Sanidad</a></li>
-                        <li><a class="bg-gray-800 hover:bg-gray-400 text-white border border-solid-black hover:bg-gray-700 font-bold py-2 px-4 rounded inline-flex hover:bg-gray-400 transition items-center " href="{{ route('foods.index') }}">Comida</a></li>
+                        <li><a href="{{ route('animal.create') }}" class="w-50 bg-gray-800 hover:bg-gray-400 text-white border border-solid-black hover:bg-gray-700 font-bold py-2 px-4 rounded inline-flex hover:bg-gray-400 transition items-center">Agregar un nuevo animal</a></li>
+                        <li><a href="{{ route('animal.index') }}" class="w-50 bg-gray-800 hover:bg-gray-400 text-white border border-solid-black hover:bg-gray-700 font-bold py-2 px-4 rounded inline-flex hover:bg-gray-400 transition items-center">Listado de animales</a></li>
+                        <li><a class="w-50 bg-gray-800 hover:bg-gray-400 text-white border border-solid-black hover:bg-gray-700 font-bold py-2 px-4 rounded inline-flex hover:bg-gray-400 transition items-center " href="{{ route('production.index') }}">Produccion</a></li>
+                        <li><a class="w-50 bg-gray-800 hover:bg-gray-400 text-white border border-solid-black hover:bg-gray-700 font-bold py-2 px-4 rounded inline-flex hover:bg-gray-400 transition items-center " href="{{ route('healths.index') }}">Sanidad</a></li>
+                        <li><a class="w-50 bg-gray-800 hover:bg-gray-400 text-white border border-solid-black hover:bg-gray-700 font-bold py-2 px-4 rounded inline-flex hover:bg-gray-400 transition items-center " href="{{ route('foods.index') }}">Comida</a></li>
                     </ul>
                     
                 </div>

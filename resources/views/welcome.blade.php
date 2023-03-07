@@ -15,7 +15,9 @@
         </style>
 
         <style>
-            body {
+            
+            *{
+                background: #1F2937;
                 font-family: 'Nunito', sans-serif;
             }
         </style>
