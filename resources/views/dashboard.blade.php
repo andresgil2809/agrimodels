@@ -7,7 +7,7 @@
 
     <div class="py-12 p-6 ">
         <div class="w-6x1 mx-auto hx-auto sm:px-6 container">
-            <div class=" bg-gray-100 overflow-hidden shadow-xl sm:rounded-lg text-start flex p-6 h-4x1" >
+            <div class=" bg-gray-200 overflow-hidden shadow-xl sm:rounded-lg text-start flex p-6 h-4x1" >
                 
                 <div class="terreno flex-1 m-1" >
                     <h2 class="h2 font-extrabold text-center uppercase text-black " >Gestion de cultivos</h2>

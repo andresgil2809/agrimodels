@@ -28,12 +28,12 @@
             @if (Route::has('login'))
                 <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
                     @auth
-                        <a href="{{ url('/dashboard') }}" class="text-sm      underline" style="color: white">Bienvenido</a>
+                    <a href="{{ url('/dashboard') }}" class="text-sm   underline" style="color: white">Bienvenido</a>
                     @else
-                        <a href="{{ route('login') }}" class="text-m text-white dark:text-white underline">Iniciar sesión</a>
-
+                        <a href="{{ route('login') }}" class="text-m  underline"  style="color: white;" >Iniciar sesión</a>
+                        
                         @if (Route::has('register'))
-                            <a href="{{ route('register') }}" class="ml-4 text-m text-white dark:text-white underline">Registrate</a>
+                            <a href="{{ route('register') }}" class="ml-4 text-m underline" style="color: white" >Registrate</a>
                         @endif
                     @endauth
                 </div>

@@ -4,11 +4,11 @@
         <div class="align-self-center col-6  ">
             
             <div class="foto ">
-                <label class="form-label h5" for="foto">Foto</label> 
+                <label class="form-label h5" for="foto">Foto</label> <br>
                 @if (isset($planta->foto))
-                <img src="{{ asset('storage').'/'.$planta->foto }}" alt="">
+                <img src="{{ asset('storage').'/'.$planta->foto }}" alt="" class="rounded mx-auto d-block">
                 @endif
-                <input class="form-control" type="file" name="foto" value="" autocomplete="off">
+                <input class="" type="file" name="foto" value="" autocomplete="off">
             </div>  
             
             <div class="" hidden >
